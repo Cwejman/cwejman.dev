@@ -1,0 +1,45 @@
+intro: |
+  Jonas's interest in UNIX, Emacs and Linux has been a cornerstone of his 7-year career in web development. He is a self-taught developer with a technically deep background, demonstrated through his contributions in various domains:
+  
+  He has developed and led the architectural design of web services, worked with Dev Ops, made Linux services, and worked with audio electronics. In the realm of front-end development, Jona has pioneered innovative solutions within the React ecosystem, going behind the scenes and bringing new features with focus on data-practices, performance and maintainability.
+  
+  Jona is equally enthusiastic about backend development and embedded systems, despite his primary career focus on front-end projects. He openly embraces opportunities in these areas with strong interest.
+
+  In addition to being a talented developer, Jona is structured, easy to communicate with and often brings enthusiasm and positive energy to the team.
+skills:
+  JavaScript Ecosystem: |
+    React, Redux, Apollo (GraphQL), Ramda, Node.js, Typescript, React Native, Jest, Axios (HTTP/REST), Webpack, Rollup, Next.js, Gatsby, Electron, NWJS, Styled Components, Emotion, Flow, Three.js, D3.js, Angular, Ionic, Gulp.
+  Programming Languages: |
+    <gr>Expert (</gr>JavaScript/Typescript<gr>) Hobby (</gr>Python, C/C++, Clojure/ClojureScript, Rust, Java, Elisp<gr>)</gr>.
+  Databases: |
+    MySQL, PostgresSQL, MongoDB.
+  Cloud Services: |
+    AWS, Azure, Azure DevOps, Digital Ocean, Netlify, Gitlab CI, GitHub Actions.
+  Tools & Services: |
+    Emacs, Vim, Docker, Podman, Kubernetes, DevSpace, LXC, Apache, Nginx.
+  Operating Systems: |
+    MacOS, Linux <gr>(Debian, Fedora, Ubuntu, Arch)</gr>, Windows.
+  Embedded Targets: |
+    Cortex M4 <gr>(Teensy)</gr>, ATMEGA32 <gr>(Arduino)</gr>, Attiny85, ESP32, Raspberry Pi.
+experiences:
+  - title: <st>Dev Lead</st> and <st>Mentor</st> for <st>Save the Children</st> (Alten Consultant)
+    intro: |
+      Save the Children’s local humanitarian initiative Hjulverkstan, in need for administrative web applications and a public website for in their expanding bike shops, Jona leads the development of a team of interns.
+    efforts: |
+      - **Mentor the team**: Teach through collaborative workshops about the ecosystem, choosing a tech stack, git hygiene, functional programming practices with React application design and more.
+      - **Create build/development tools**: Meet modern web requirements implementing Static Site Generation through SSR in React, without opting in to large frameworks like Next.js, resulting in an independent and simple implementation.
+    tools: Java, SpringBoot, React, AWS
+  - title: <st>Volunteer</st> at <st>Hug (Help Ukraine Gothenburg)</st> (Secondment)
+    intro: |
+      Hug is one of Scandinavia's leading humanitarian NGOs aiding Ukraine. Initiated as a response to the escalating invasion in February 2022, the organization has grown quickly with acquired partners such as Volvo, Västra Götalandsregionen, Svenska Kyrkan and BRIS.
+    efforts: |
+      - **Logistics manager**: Responsible for delivering donations to Ukraine.
+        - Led partnership with Volvo Defense’s forwarders for transportation.
+        - Orchestrated the planning, loading, and biweekly dispatch of full trucks, ensuring efficient delivery of aid.
+      - Develop Hug's official website: Enhancing the organization's online presence and communication (www.hug.ngo).
+    results: |
+      - **130 tons of aid sent**: Facilitated the delivery of over 130 tons of crucial aid to Ukraine, valued at approximately 30 million SEK.
+      - **1500 monthly website visitors**: Just a few months old the website grows and serves as a vital platform for structured communication.
+        - **Raised 200 000 SEK in three months**: Integrated Stripe for monetary donations raised 200 000 SEK by the first quarter, streamlining the donation process.
+    tools: JavaScript, Stripe Payments Platform, WebFlow, Figma.
+

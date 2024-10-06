@@ -1,0 +1,69 @@
+---
+layout: default
+title: Cwejman Resume
+---
+
+<div id="page">
+<div id="header">
+    <canvas id="canvas"></canvas>
+    <div id="text">
+        <h1>Jona Cwejman</h1>
+        <h3>Senior Software Developer</h3>
+    </div>
+<script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+<script>
+    var gradient = new Gradient();
+    gradient.initGradient("#canvas");
+</script>
+</div>
+
+<section id="intro">
+    <div>
+        {{ site.data.resume.intro | markdownify }}
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div id="skills-list">
+        {% for skill in site.data.resume.skills %}
+        <div>
+            <h3><strong>{{ skill[0] }}</strong></h3>
+            <p>{{ skill[1] | replace: '
+                <gr>', '<span class="gray">' | replace: '</gr>
+                ', '</span>' }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="experiences">
+    <h2>Experiences</h2>
+
+    <div id="experience-list">
+        {% for experience in site.data.resume.experiences %}
+        <div class="experience">
+            <h3>{{ experience.title | replace: 'st>', 'strong>' }}</h3>
+
+            {{ experience.intro | markdownify }}
+
+            {% if experience.efforts %}
+            <h4>Efforts:</h4>
+            {{ experience.efforts | markdownify }}
+            {% endif %}
+
+            {% if experience.results %}
+            <h4>Results:</h4>
+            {{ experience.results | markdownify }}
+            {% endif %}
+
+            {% if experience.tools %}
+            <div><h4 style="display: inline-block">Tools and Methodologies:</h4> {{ experience.tools }}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+</div>
