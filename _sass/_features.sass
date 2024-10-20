@@ -1,0 +1,71 @@
+#header
+  width: 100%
+  display: flex
+  gap: 2rem
+  flex-wrap: wrap
+
+  #text *
+    margin: 0
+    line-height: 1.4
+
+canvas#canvas
+  width: 6rem
+  height: 6rem
+  border-radius: 50%
+  --gradient-color-1:  #d3e3e1
+  --gradient-color-2: #415758
+  --gradient-color-3: #6bbfb5
+  --gradient-color-4: #0e2533
+  --gradient-speed: 0.000004
+
+.experience
+  margin: 1rem 0
+
+  .labels
+    margin-left: -2px
+    display: flex
+    flex-wrap: wrap
+    gap: 0.7rem
+
+    div
+      padding: 0.35rem 0.8rem calc(0.35rem - 1px)
+      border-radius: 8px
+      font-size: 1rem
+      font-weight: 400
+      line-height: 1.65rem
+      color: var(--text)
+      display: flex
+      align-items: center
+      gap: 0.5rem
+      background: var(--bg-card)
+      border: 0.5px solid var(--card-border)
+
+    .extra
+      color: var(--text-muted)
+      font-weight: 300
+
+    img
+      height: 1rem
+      width: 1rem
+
+  .tools
+    display: flex
+    flex-wrap: wrap
+    column-gap: 0.5rem
+    row-gap: 0.8rem
+
+    div
+      padding: 0.3rem 0.6rem
+      background: var(--bg-card)
+      border-radius: 5px
+      font-size: 0.9rem
+
+  .footer
+    display: flex
+    justify-content: end
+
+  button
+    margin-top: 3rem
+
+    img
+      width: 1.3rem

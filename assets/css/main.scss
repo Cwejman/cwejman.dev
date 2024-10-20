@@ -1,0 +1,49 @@
+---
+---
+
+@use "_native";
+@use "_foundation";
+@use "_features";
+
+:root {
+  --purple: hsl(255deg, 92%, 76%);
+  --yellow: hsl(46deg, 100%, 50%);
+  --button-border: hsla(200deg, 50%, 100%, 25%);
+  --card-border: hsla(200deg, 50%, 80%, 40%);
+  --border: hsla(200deg, 50%, 70%, 15%);
+  --bg: hsl(167deg, 15%, 30%);
+  --bg-1: hsl(167deg, 20%, 40%);
+  --bg-2: hsl(187deg, 20%, 35%);
+  --bg-3: hsl(167deg, 12%, 30%);
+  --bg-card: hsla(180deg, 20%, 25%, 50%);
+  --text-muted: hsl(175deg, 15%, 75%);
+  --text: hsl(0deg, 0%, 93%);
+  --text-accent: hsl(0deg, 0%, 96%);
+}
+
+[data-theme="dark"] {
+  --purple: hsl(255deg, 92%, 76%);
+  --yellow: hsl(46deg, 100%, 50%);
+  --button-border: hsl(0deg, 0%, 25%);
+  --border: hsl(0deg, 0%, 13%);
+  --bg: hsl(0deg, 0%, 10%);
+  --bg-card: hsl(0deg, 0%, 14%);
+  --text-muted: hsl(0deg, 0%, 60%);
+  --text: hsl(0deg, 0%, 80%);
+  --text-accent: hsl(0deg, 0%, 100%);
+}
+
+
+@font-face {
+  font-family: "dm-sans";
+  src: url("../fonts/dm-sans-variable-normal.ttf");
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dm-sans";
+  src: url("../fonts/dm-sans-variable-italic.ttf");
+  font-weight: 100 700;
+  font-style: italic;
+}

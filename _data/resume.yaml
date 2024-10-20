@@ -8,7 +8,7 @@ intro: |
   In addition to being a talented developer, Jona is structured, easy to communicate with and often brings enthusiasm and positive energy to the team.
 skills:
   JavaScript Ecosystem: |
-    React, Redux, Apollo (GraphQL), Ramda, Node.js, Typescript, React Native, Jest, Axios (HTTP/REST), Webpack, Rollup, Next.js, Gatsby, Electron, NWJS, Styled Components, Emotion, Flow, Three.js, D3.js, Angular, Ionic, Gulp.
+    React, Redux, Apollo <gr>(GraphQL)</gr>, Ramda, Node.js, AWS SDK, Typescript, React Native, Jest, Axios, Next.js, Gatsby, Electron, NWJS, Three.js, D3.js, Angular, Ionic.
   Programming Languages: |
     <gr>Expert (</gr>JavaScript/Typescript<gr>) Hobby (</gr>Python, C/C++, Clojure/ClojureScript, Rust, Java, Elisp<gr>)</gr>.
   Databases: |
@@ -22,14 +22,24 @@ skills:
   Embedded Targets: |
     Cortex M4 <gr>(Teensy)</gr>, ATMEGA32 <gr>(Arduino)</gr>, Attiny85, ESP32, Raspberry Pi.
 experiences:
-  - title: <st>Dev Lead</st> and <st>Mentor</st> for <st>Save the Children</st> (Alten Consultant)
+  - title: <st>Lead Developer</st> and <st>Mentor</st> for <pu>Save the Children</pu>
+    isAlten: true
+    date: Jan 2024 - Present
     intro: |
       Save the Children’s local humanitarian initiative Hjulverkstan, in need for administrative web applications and a public website for in their expanding bike shops, Jona leads the development of a team of interns.
     efforts: |
       - **Mentor the team**: Teach through collaborative workshops about the ecosystem, choosing a tech stack, git hygiene, functional programming practices with React application design and more.
       - **Create build/development tools**: Meet modern web requirements implementing Static Site Generation through SSR in React, without opting in to large frameworks like Next.js, resulting in an independent and simple implementation.
-    tools: Java, SpringBoot, React, AWS
-  - title: <st>Volunteer</st> at <st>Hug (Help Ukraine Gothenburg)</st> (Secondment)
+    tools:
+      - Java
+      - SpringBoot
+      - AWS
+      - TypeScript
+      - React
+      - React Query
+  - title: <st>Volunteer</st> at <st>Hug (Help Ukraine Gothenburg)</st>
+    date: Jan 2023 - Dec 2023
+    label: Secondment
     intro: |
       Hug is one of Scandinavia's leading humanitarian NGOs aiding Ukraine. Initiated as a response to the escalating invasion in February 2022, the organization has grown quickly with acquired partners such as Volvo, Västra Götalandsregionen, Svenska Kyrkan and BRIS.
     efforts: |
@@ -41,5 +51,124 @@ experiences:
       - **130 tons of aid sent**: Facilitated the delivery of over 130 tons of crucial aid to Ukraine, valued at approximately 30 million SEK.
       - **1500 monthly website visitors**: Just a few months old the website grows and serves as a vital platform for structured communication.
         - **Raised 200 000 SEK in three months**: Integrated Stripe for monetary donations raised 200 000 SEK by the first quarter, streamlining the donation process.
-    tools: JavaScript, Stripe Payments Platform, WebFlow, Figma.
-
+    tools:
+      - JavaScript
+      - Stripe Payments Platform
+      - WebFlow
+      - Figma
+  - title: <st>Front End Lead</st> for <st>SKF</st>
+    date: Mar 2022 - Jun 2022
+    isAlten: true
+    intro: |
+      Enhanced SKF’s IoT platform’s app for integrations. Delivered features and tackled rising technical debt, instability, and bugs that hindered the backend-focused team's ability to effectively deliver on a substantial backlog of full-stack features.
+    efforts: |
+      - **Front end architectural reformation**: Adhere to Functional Design Principles valued by the chosen tech stack of React, Redux and Reselect.
+      - **New features and reformation in parallel**: Successfully leverage new features in parallel with the architectural reformation through a structured bite sized approach.
+    results: |
+      - **From backlog to surplus**: Resolve all front-end technical debt, instability and bugs while doubling the amount of user functionality.
+      - **Architecture design pattern**: Create a simple, clear and coherent design pattern for the React app, easing maintainability, stability, performance, and future feature development:
+        - **50% reduction in codebase size** despite doubling number of features.
+        - Significantly cut the backend focused team's overhead to deliver new full-stack functionality.
+    tools:
+      - TypeScript
+      - React
+      - Redux
+      - Reselect
+      - Golang
+  - title: <st>Front End Lead</st> and <st>Momentary Cloud Architect</st> at <st>ABB Robotics</st>
+    date: Jan 2021 - Nov 2021
+    isAlten: true
+    intro: |
+      Lead the development and reformation of the micro front end for ABB Robotics' next-generation IoT platform, alongside initiating an end-to-end department-wide architectural redesign.
+      
+      The project had faced critical challenges, rooted in a substantial backlog of volatile architectural decisions. The front end therefore had both large technical debt but also a high level of complex responsibilities given the array of challenges with the IoT services and their APIs.
+    efforts: |
+      - **Reform the micro front-end architecture**: Align with best practices and Functional Programming principles to build a simple yet extensible design pattern, creating headway in how React Query can be used with complex dependent requests and real time sockets in a large micro front end.
+      - **Launched System-Wide Architectural Overhaul**: Responded to system architects' concerns over foundational flaws in the IoT architecture by leading the design and presentation of a new, UNIX Philosophy-inspired architecture. This approach emphasized modularity, utilizing a policy mechanism for separating concerns across independent services.
+      - **Resolve DevOps complexity**: Refine how all dependent web apps, services and libraries are built, delivered and connected as well as improving the local developer experience. Working with Azure Pipelines, Docker and Rollup.
+      - **Web Services Enhancement**: Advanced the authentication mechanisms in the Express.js server, improving security, feature set and user experience.
+      - **Development Guidelines**: Established shared programming guidelines to refine peer review, technical decision-making, and collaboration processes.
+    results: |
+      - **Enhanced Performance and UX**: Achieved significant reductions in code complexity and app load times (10x faster), and minimized side effects (4x less), facilitating real-time updates.
+      - **Enable and deliver major features**: Through the reformation enable and add the support for and implement a new extensive feature requested from stakeholders.
+      - **Architectural redesign proposal accepted**: The solution to solving the platforms foundational instability was successfully received by architects and management. Redefining their approach to IoT web services.
+    tools:
+      - Typescript
+      - React
+      - React Query
+      - Node.js
+      - GraphQL
+      - MySQL
+      - MongoDB
+      - Kubernetes
+      - Docker
+      - Azure Digital Twin
+      - Azure Services
+      - Azure DevOps
+  - title: <st>Freelance Web/App Developer</st>
+    date: 2014 - 2021
+    intro: |
+      As a means of flexible income Jona has throughout the years taken on occasional client for web / app work.
+    efforts: |
+      - **Build websites** for clients using React, Gatsby, Netlify CMS, Angular and jQuery.
+      - **Create mobile apps** using React Native and Ionic.
+      - **Invent a Git based CMS** using AWS Lambdas, Express.js and React (later Netlify CMS entered the ecosystem that Jona used in favor).
+    results: |
+      - Successfully deliver websites to clients in the art, restaurant and legal sectors.
+      - Build an iOS app with for bird enthusiasts.
+    tools:
+      - React
+      - React Native
+      - AWS Lambdas
+      - Node.js
+      - Gatsby
+      - Netlify CMS
+      - Angular
+      - Ionic
+  - title: <st>Front End Lead</st> at <st>Bobby Digital Studios</st>
+    date: Feb 2018 - May 2019
+    intro: |
+      Lead front end development for Bobby Digital Studios in a phase of expansion, delivering the next generation of their flagship product Hivemind, a custom CMS type of service providing tailored websites, mobile and desktop applications for customers like **Essity**, **Dentsply**, and **Haglöfs**.
+    efforts: |
+      - **Create a Drag & Drop library**: Push the boundaries of the React ecosystem by leveraging the first Drag and Drop library with dynamic support for any types of layouts. Currently in use by multiple applications and clients.
+      - **Lead front end development of new platform**: In cooperation with back end and UX, take full responsibility for delivering the generation of Hivemind from scratch to beta release.
+      - **Implement CI/CD for the web apps**: Create and maintain pipelines with emphasis on optimising JavaScript bundling, running a stable environment and increasing transparency and traceability.
+    results: |
+      - **Successfully deliver new platform to clients**: Create and deliver the front end beta release to clients. Bringing a fully-fledged content/product manager with an operating system like user experience with windows, files and Drag and Drop.
+      - **Establish new approach to GraphQL**: Integrating Apollo’s GraphQL JavaScript SDK with the paradigm of Redux in React. Combining queries, mutations, field validation and errors, authentication, navigation and real time updates through a unified uncoupled design pattern.
+    tools:
+      - React
+      - React Native
+      - Redux
+      - Apollo
+      - GraphQL
+      - Node.js
+      - AWS
+      - Docker
+      - Kubernetes
+      - Gitlab CI
+  - title: <st>Cwejman Sound</st>
+    date: Feb 2017 - Nov 2017
+    intro: |
+      The boutique synthesizer brand Cwejman Sound, led by Wowa Cwejman needed assistance, from coming up with new products to optimising production and workflow.
+    efforts: |
+      - **Co-create a new synthesiser**: Create the initial drafts for new audio equipment product and together with Wowa take it to production.
+      - **Design new premium packaging**: Elevate the brand by designing new product packaging, creating a qualitative unboxing experience resonating with brands high quality reputation.
+      - **Invent new plastic knobs**: Design a new type of knob for the synthesizers and prepare it for production with a Chinese manufacturer.
+      - **Administrate inventory and factory production**: Implement a structure around production with inventory, factory guidelines, also helping with production problems with PCB drilling and Pick and Place machines.
+    tools:
+      - Autodesk Fusion360
+      - KiCad
+      - React
+  - title: <st>Intern</st> at <st>Icomera</st>
+    date: Feb 2017 - Nov 2017
+    intro: |
+      Providing globally leading connectivity solutions for public transportation, Icomera wanted to explore a new type of application easing the connectivity process.
+    efforts: |
+      - **Develop an iOS / Linux integrated Proof of Concept**: Create a mobile app using Angular, Ionic and iOS’ WiFi SDK to connect with a Linux Systemd service created in Node.js Express.js on Icomera’s Passanger WiFi-system.
+    tools:
+      - Linux
+      - Node.js
+      - Express.js
+      - Angular
+      - Ionic
