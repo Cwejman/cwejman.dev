@@ -43,7 +43,7 @@ title: Cwejman Resume
     <div class="table">
         {% for skill in site.data.resume.skills %}
         <div class="row">
-            <h3 class="cell"><strong>{{ skill[0] }}</strong></h3>
+            <h4 class="cell"><strong>{{ skill[0] }}</strong></h4>
             <div class="cell">{{ skill[1] | replace: '<gr>', '<span class="gray">' | replace: '</gr>', '</span>' }}
             </div>
         </div>
@@ -61,23 +61,41 @@ title: Cwejman Resume
     {% for experience in site.data.resume.experiences %}
     <div class="content">
         <div class="experience">
-            <h3>{{ experience.title | replace: 'st>', 'strong>' }}</h3>
 
-            {{ experience.intro | markdownify }}
+            <div class="labels">
+                <div>{{ experience.date }}</div>
+                {% if experience.isAlten %}
+                <div>
+                    <img src="assets/images/alten.svg" />
+                    Alten Consultant
+                </div>
+                {% endif %}
+                {% if experience.label %}
+                <div class="extra">{{ experience.label }}</div>
+                {% endif %}
+            </div>
+
+            <h3>{{ experience.title | replace: 'st>', 'strong>' }}</h3>
+            <div class="background">{{ experience.intro | markdownify }}</div>
 
             {% if experience.efforts %}
-            <h4>Efforts:</h4>
+            <h4>Efforts</h4>
             {{ experience.efforts | markdownify }}
             {% endif %}
 
             {% if experience.results %}
-            <h4>Results:</h4>
+            <h4>Results</h4>
             {{ experience.results | markdownify }}
             {% endif %}
 
+            <h4>Technologies</h4>
             {% if experience.tools %}
-            <div><h4 style="display: inline-block">Tools and Methodologies:</h4> {{ experience.tools }}</div>
-            {% endif %}
+            <div class="tools">
+                {% for tool in experience.tools %}
+                <div>{{ tool }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
         </div>
     </div>
     {% endfor %}

@@ -1,0 +1,57 @@
+#bg
+  position: absolute
+  z-index: 10
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+
+  canvas
+    width: 100%
+    height: 100%
+
+section
+  padding: 0 1rem
+  border-bottom: 1px solid hsl(0deg, 0%, 92%)
+
+  > div
+    margin: 0 auto
+    border-left: 1px solid hsl(0deg, 0%, 92%)
+
+.content
+  border-right: 1px solid hsl(0deg, 0%, 92%)
+  max-width: 44rem
+  padding: 4rem
+
+  &:not(:last-child)
+    border-bottom: 1px solid hsl(0deg, 0%, 92%)
+
+
+.table
+  max-width: 52rem
+
+  > .row
+    display: flex
+    flex-wrap: wrap
+
+    &:not(:last-child)
+      border-bottom: 1px solid hsl(0deg, 0%, 92%)
+
+  .cell
+    padding: 2rem 4rem
+    margin: 0
+    border-right: 1px solid hsl(0deg, 0%, 92%)
+
+  h4.cell
+    width: 8rem
+
+  div.cell
+    min-width: 13rem
+    flex: 1
+
+#top
+  height: 6rem
+
+.gray
+  color: #8D8D8D
+
