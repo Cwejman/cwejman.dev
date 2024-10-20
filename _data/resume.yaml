@@ -8,7 +8,7 @@ intro: |
   In addition to being a talented developer, Jona is structured, easy to communicate with and often brings enthusiasm and positive energy to the team.
 skills:
   JavaScript Ecosystem: |
-    React, Redux, Apollo (GraphQL), Ramda, Node.js, Typescript, React Native, Jest, Axios (HTTP/REST), Webpack, Rollup, Next.js, Gatsby, Electron, NWJS, Styled Components, Emotion, Flow, Three.js, D3.js, Angular, Ionic, Gulp.
+    React, Redux, Apollo <gr>(GraphQL)</gr>, Ramda, Node.js, AWS SDK, Typescript, React Native, Jest, Axios, Next.js, Gatsby, Electron, NWJS, Three.js, D3.js, Angular, Ionic.
   Programming Languages: |
     <gr>Expert (</gr>JavaScript/Typescript<gr>) Hobby (</gr>Python, C/C++, Clojure/ClojureScript, Rust, Java, Elisp<gr>)</gr>.
   Databases: |

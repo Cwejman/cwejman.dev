@@ -3,47 +3,63 @@ layout: default
 title: Cwejman Resume
 ---
 
-<div id="page">
-<div id="header">
-    <canvas id="canvas"></canvas>
-    <div id="text">
-        <h1>Jona Cwejman</h1>
-        <h3>Senior Software Developer</h3>
-    </div>
 <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
-<script>
-    var gradient = new Gradient();
-    gradient.initGradient("#canvas");
-</script>
-</div>
 
-<section id="intro">
-    <div>
-        {{ site.data.resume.intro | markdownify }}
+<section id="top">
+    <div class="content"></div>
+</section>
+
+<section>
+    <div class="content">
+        <div id="header">
+            <canvas id="canvas"></canvas>
+            <div id="text">
+                <h1>Jona Cwejman</h1>
+                <h3>Senior Software Developer</h3>
+            </div>
+            <script>
+                var gradient = new Gradient();
+                gradient.initGradient("#canvas");
+            </script>
+        </div>
     </div>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
+<section>
+    <div class="content">
+        <div id="intro">
+            {{ site.data.resume.intro | markdownify }}
+        </div>
+    </div>
+</section>
 
-    <div id="skills-list">
+<section>
+    <div class="content">
+        <h2>Skills</h2>
+    </div>
+</section>
+
+<section>
+    <div class="table">
         {% for skill in site.data.resume.skills %}
-        <div>
-            <h3><strong>{{ skill[0] }}</strong></h3>
-            <p>{{ skill[1] | replace: '
-                <gr>', '<span class="gray">' | replace: '</gr>
-                ', '</span>' }}
-            </p>
+        <div class="row">
+            <h3 class="cell"><strong>{{ skill[0] }}</strong></h3>
+            <div class="cell">{{ skill[1] | replace: '<gr>', '<span class="gray">' | replace: '</gr>', '</span>' }}
+            </div>
         </div>
         {% endfor %}
     </div>
 </section>
 
-<section id="experiences">
-    <h2>Experiences</h2>
+<section>
+    <div class="content">
+        <h2>Experiences</h2>
+    </div>
+</section>
 
-    <div id="experience-list">
-        {% for experience in site.data.resume.experiences %}
+<section>
+    {% for experience in site.data.resume.experiences %}
+    <div class="content">
         <div class="experience">
             <h3>{{ experience.title | replace: 'st>', 'strong>' }}</h3>
 
@@ -63,7 +79,6 @@ title: Cwejman Resume
             <div><h4 style="display: inline-block">Tools and Methodologies:</h4> {{ experience.tools }}</div>
             {% endif %}
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </section>
-</div>

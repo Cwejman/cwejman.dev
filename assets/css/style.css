@@ -14,19 +14,77 @@
 
 body {
     font-family: 'dm-sans', sans-serif;
-    max-width: 48rem;
-    margin: 6rem auto 0;
+    margin: 0;
     font-weight: 300;
     line-height: 1.65;
-    background-color: hsl(0deg, 0%, 97%);
+    background-color: #fff;
     color: #131313;
 }
 
-#page {
-    padding: 6rem 4rem;
-    border: 1px solid hsl(0deg, 0%, 94%);
-    background-color: #fff;
-    border-radius: 0.7rem;
+#bg {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#bg canvas {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: 0 1rem;
+    border-bottom: 1px solid hsl(0deg, 0%, 92%);
+}
+
+section > div {
+    margin: 0 auto;
+    border-left: 1px solid hsl(0deg, 0%, 92%);
+}
+
+.content {
+    border-right: 1px solid hsl(0deg, 0%, 92%);
+    max-width: 38rem;
+    padding: 4rem;
+}
+
+.content:not(:last-child) {
+    border-bottom: 1px solid hsl(0deg, 0%, 92%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row:not(:last-child) {
+    border-bottom: 1px solid hsl(0deg, 0%, 92%);
+}
+
+.cell {
+    padding: 2rem 4rem;
+    border-right: 1px solid hsl(0deg, 0%, 92%);
+}
+
+h3.cell {
+    width: 8rem;
+    margin: 0;
+}
+
+div.cell {
+    min-width: 13rem;
+    flex: 1;
+}
+
+.table {
+    max-width: 46rem;
+}
+
+#top {
+   height: 6rem;
 }
 
 h1, h2, h4, strong {
@@ -38,9 +96,9 @@ h1 {
 }
 
 h2 {
-    display: inline-block;
     font-size: 2rem;
-    margin: 5rem 0 2rem;
+    margin: 0;
+    line-height: 1;
 }
 
 h3 {
@@ -87,8 +145,6 @@ img {
     width: 100%;
     display: flex;
     column-gap: 2rem;
-    margin-bottom: 5rem;
-    border-radius: 0.6rem;
 }
 
 #header #text * {
@@ -107,20 +163,6 @@ canvas#canvas {
     --gradient-speed: 0.000004;
 }
 
-#intro div {
-    border-left: 0.25rem solid #F4F4F4;
-    padding: 0.25rem 0 0.25rem 1.6rem;
-}
-
-#intro div p:first-child {
-    margin-top: 0;
-}
-
-#intro div p:last-child {
-    margin-bottom: 0;
-}
-
-
 #experience-list {
     display: flex;
     flex-direction: column;
@@ -131,28 +173,7 @@ canvas#canvas {
     margin-top: -1rem;
 }
 
-#skills-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.6rem;
-}
 
-#skills-list div {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-}
-
-#skills-list h3 {
-    width: 8rem;
-    margin: 0;
-}
-
-#skills-list div p {
-    min-width: 20rem;
-    flex: 1;
-    margin: 0
-}
 
 .gray {
     color: #8D8D8D;
