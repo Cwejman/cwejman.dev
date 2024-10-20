@@ -22,7 +22,7 @@ skills:
   Embedded Targets: |
     Cortex M4 <gr>(Teensy)</gr>, ATMEGA32 <gr>(Arduino)</gr>, Attiny85, ESP32, Raspberry Pi.
 experiences:
-  - title: <st>Lead Developer</st> and <st>Mentor</st> for <st>Save the Children</st>
+  - title: <st>Lead Developer</st> and <st>Mentor</st> for <pu>Save the Children</pu>
     isAlten: true
     date: Jan 2024 - Present
     intro: |

@@ -1,12 +1,12 @@
 #header
   width: 100%
   display: flex
-  column-gap: 2rem
+  gap: 2rem
+  flex-wrap: wrap
 
   #text *
     margin: 0
     line-height: 1.4
-
 
 canvas#canvas
   width: 6rem
@@ -19,12 +19,14 @@ canvas#canvas
   --gradient-speed: 0.000004
 
 
+
 .experience
   margin: 1rem 0
 
   .labels
     margin-left: -2px
     display: flex
+    flex-wrap: wrap
     gap: 0.7rem
 
     div
@@ -33,15 +35,15 @@ canvas#canvas
       font-size: 1rem
       font-weight: 400
       line-height: 1.65rem
-      color: #3D2C0E
+      color: $text
       display: flex
       align-items: center
       gap: 0.5rem
-      background: hsl(0deg, 0%, 98%)
-      border: 0.5px solid hsl(0, 0%, 90%)
+      background: $bg-card
+      border: 0.5px solid $border
 
     .extra
-      color: hsl(38deg, 0%, 40%)
+      color: $text-muted
       font-weight: 300
 
     img
@@ -56,6 +58,16 @@ canvas#canvas
 
     div
       padding: 0.3rem 0.6rem
-      background: hsl(0deg, 0%, 97%)
+      background: $bg-card
       border-radius: 5px
       font-size: 0.9rem
+
+  .footer
+    display: flex
+    justify-content: end
+
+  button
+    margin-top: 3rem
+
+    img
+      width: 1.3rem

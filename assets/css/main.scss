@@ -3,6 +3,17 @@
 # only Main files contain this front matter, not partials.
 ---
 
+$purple: hsl(255deg, 92%, 76%);
+$yellow: hsl(46deg, 100%, 50%);
+
+$button-border: hsl(0deg, 0%, 25%);
+$border: hsl(0deg, 0%, 13%);
+$bg: hsl(0deg, 0%, 10%);
+$bg-card: hsl(0deg, 0%, 14%);
+$text-muted: hsl(0deg, 0%, 60%);
+$text: hsl(0deg, 0%, 80%);
+$text-accent: hsl(0deg, 0%, 100%);
+
 @import "../../_sass/_native";
 @import "../../_sass/_foundation";
 @import "../../_sass/_features";

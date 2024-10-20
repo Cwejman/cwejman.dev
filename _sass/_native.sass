@@ -3,12 +3,21 @@ body
   margin: 0
   font-weight: 300
   line-height: 1.65
-  background-color: #fff
-  color: #131313
+  background-color: $bg
+  color: $text
 
+@media screen and (max-width: 500px)
+  h1
+    font-size: 2.3rem !important
+  h2
+    font-size: 1.8rem !important
+  h3
+    font-size: 1.2rem !important
+  p, ul
+    font-size: 0.9rem !important
 
 h1, h2, h4, strong
-  color: #3D2C0E
+  color: $text-accent
 
 h1
   font-size: 3rem
@@ -23,9 +32,7 @@ h3
   font-weight: 300
   font-size: 1.4rem
 
-  opacity: 0.7
-  &:has(strong)
-    opacity: 1 !important
+  color: $text-muted
 
 h4
   margin: 3rem 0 1.5rem
@@ -49,8 +56,40 @@ ul
       opacity: 0.7
 
     li strong
-      color: #131313 !important
+      color: $text-accent
 
-img
-  width: 100%
+button
+  display: flex
+  align-items: center
+  gap: 0.55rem
+
+  background: $bg
+  color: $text-muted
+  border: 0.5px solid $button-border
+  border-radius: 1.2rem
+
+  font-size: 0.9rem
+  font-weight: 300
+  line-height: 1.65rem
+
+  cursor: pointer
+
+  white-space: nowrap
+  overflow: hidden
+
+  transition: 0.4s ease
+  max-width: 2.45rem
+  padding: 0.35rem 0.65rem
+
+  svg
+    flex-shrink: 0
+
+  span
+    opacity: 1
+
+  &:hover
+    color: $text
+    max-width: 20rem
+    padding: 0.35rem 0.8rem
+
 
