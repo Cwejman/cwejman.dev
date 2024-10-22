@@ -1,3 +1,25 @@
+.bg
+  position: fixed
+  top: -4rem
+  left: -4rem
+  width: calc(100% + 8rem)
+  height: calc(100% + 8rem)
+  z-index: -10
+
+  &.one
+    background: radial-gradient(circle at 100% 0%, var(--bg-1), hsla(0deg, 50%, 50%, 0%))
+
+  &.two
+    background: radial-gradient(circle at 100% 100%, var(--bg-2), hsla(0deg, 50%, 50%, 0%))
+
+  &.noise
+    top: -10rem
+    position: absolute
+    height: 10000vh
+    background: url(/assets/images/noise.png) repeat
+    background-size: 20%
+    opacity: 0.17
+
 #header
   width: 100%
   display: flex
@@ -12,10 +34,7 @@ canvas#canvas
   width: 6rem
   height: 6rem
   border-radius: 50%
-  --gradient-color-1:  #d3e3e1
-  --gradient-color-2: #415758
-  --gradient-color-3: #6bbfb5
-  --gradient-color-4: #0e2533
+
   --gradient-speed: 0.000004
 
 .experience

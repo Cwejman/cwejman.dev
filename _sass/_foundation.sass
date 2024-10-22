@@ -6,43 +6,29 @@
     padding: 2rem !important
 
 @media screen and (max-width: 550px)
+  section
+    padding: 0 0.6rem !important
+
   .content
-    padding: 2rem 1rem !important
+    padding: 2rem 1.4rem !important
 
   .cell
-    padding: 2rem 1rem !important
+    padding: 2rem 1.4rem !important
 
   .table .row
     flex-direction: column
 
   .table h4.cell
-    width: calc(100% - 2rem - 1px) !important
-    margin-bottom: -2.5rem
+    width: calc(100% - 2.8rem - 1px) !important
+    padding-bottom: 1rem !important
 
-.bg
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  z-index: -10
-
-  &.one
-    background: radial-gradient(circle at 100% 0%, var(--bg-1), hsla(0deg, 50%, 50%, 0%))
-
-  &.two
-    background: radial-gradient(circle at 100% 100%, var(--bg-2), hsla(0deg, 50%, 50%, 0%))
-
-  &.noise
-    position: absolute
-    height: 10000vh
-    background: url(/assets/images/noise.png) repeat
-    background-size: 20%
-    opacity: 0.3
+  .table div.cell
+    padding-top: 0 !important
 
 section
   padding: 0 1rem
   border-bottom: 1px solid var(--border)
+  overflow: hidden
 
   > div
     margin: 0 auto
