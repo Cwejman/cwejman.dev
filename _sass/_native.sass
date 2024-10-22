@@ -3,8 +3,8 @@ body
   margin: 0
   font-weight: 300
   line-height: 1.65
-  background-color: $bg
-  color: $text
+  background: var(--bg)
+  color: var(--text)
 
 @media screen and (max-width: 500px)
   h1
@@ -17,7 +17,7 @@ body
     font-size: 0.9rem !important
 
 h1, h2, h4, strong
-  color: $text-accent
+  color: var(--text-accent)
 
 h1
   font-size: 3rem
@@ -32,7 +32,7 @@ h3
   font-weight: 300
   font-size: 1.4rem
 
-  color: $text-muted
+  color: var(--text-muted)
 
 h4
   margin: 3rem 0 1.5rem
@@ -56,16 +56,16 @@ ul
       opacity: 0.7
 
     li strong
-      color: $text-accent
+      color: var(--text-accent)
 
 button
   display: flex
   align-items: center
   gap: 0.55rem
 
-  background: $bg
-  color: $text-muted
-  border: 0.5px solid $button-border
+  background: rgba(0,0,0,0)
+  color: var(--text-muted)
+  border: 0.5px solid var(--button-border)
   border-radius: 1.2rem
 
   font-size: 0.9rem
@@ -85,11 +85,12 @@ button
     flex-shrink: 0
 
   span
-    opacity: 1
+    opacity: 0
 
   &:hover
-    color: $text
+    color: var(--text)
+    background: var(--bg-card)
     max-width: 20rem
     padding: 0.35rem 0.8rem
-
-
+    span
+      opacity: 1 !important
