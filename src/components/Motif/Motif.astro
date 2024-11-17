@@ -1,0 +1,33 @@
+---
+import './script.ts';
+
+interface Props {
+  modelPath: string;
+}
+---
+
+<motif-context data-modelpath={Astro.props.modelPath}>
+    <div class="rounded-2xl border-[1px] border-strong/10 border-solid bg-gray-50 overflow-hidden aspect-video w-full" />
+</motif-context>
+
+<script>
+  import { getCustomDataSet } from '@utils/dom';
+  import { createCanvas } from './script'
+
+  getCustomDataSet('motif-context', ({ modelpath}, element) => {
+      createCanvas({
+          container: element.querySelector('div')!,
+          loadModel: async (loader) => {
+              const model = await loader.loadAsync(modelpath!)
+
+              model.scene.position.set(0, 0, 0);
+              model.scene.scale.set(50, 50, 50);
+              model.scene.rotation.x = -Math.PI / 2;
+              model.scene.translateZ(-28);
+
+              return model;
+          }
+      });
+  });
+
+</script>

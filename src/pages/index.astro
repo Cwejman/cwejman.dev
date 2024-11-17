@@ -1,0 +1,23 @@
+---
+import Document from '@components/Document/Document.astro';
+import Motif from '@components/Motif/Motif.astro';
+import { getExperiences } from '../content/queries';
+
+const experiences = await getExperiences();
+
+console.log(experiences[0]);
+---
+
+<Document title="Welcome to Astro.">
+	<main class="w-fill max-w-2xl mx-auto p-4">
+		{experiences.map(({ slug, model, title, intro, efforts }) => (
+			<section class="theme-purple my-[100vh] space-y-4">
+				<Motif modelPath={model} />
+				<h2 class="pt-4 pb-2 font-normal text-muted [&>strong]:text-foreground [&>strong]:font-bold">
+					<Fragment set:html={title} />
+				</h2>
+				<div class="space-y-4" set:html={intro} />
+			</section>
+		))}
+	</main>
+</Document>

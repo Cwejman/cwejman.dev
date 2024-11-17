@@ -1,0 +1,39 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: "dm-sans";
+    src: url("/fonts/dm-sans-variable-normal.ttf");
+    font-weight: 100 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "dm-sans";
+    src: url("/fonts/dm-sans-variable-italic.ttf");
+    font-weight: 100 700;
+    font-style: italic;
+  }
+}
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 5%);
+  --foreground-relaxed: hsl(0, 0%, 25%);
+  --muted: hsl(0, 0%, 60%);
+}
+
+.theme-purple {
+  --light: hsl(280, 100%, 99%);
+  --border: hsl(280, 70%, 85%);
+  --strong: hsl(280, 70%, 60%);
+  /*--muted: hsl(280, 40%, 50%);*/
+  /*--accent: hsl(280, 70%, 25%); */
+  /*--foreground: hsl(280, 80%, 15%);*/
+}
+
+* { @apply text-foreground-relaxed }
+h1 { @apply text-xl leading-snug text-foreground }
+h2 { @apply text-l leading-snug text-foreground }
+h3 { @apply text-m leading-snug text-foreground }
+p { @apply text-s }
