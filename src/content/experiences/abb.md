@@ -1,6 +1,9 @@
 ---
 company: ABB Robotics
-model: /models/robot2.glb
+model: robot
+year: Jan 2021 - Nov 2021
+type: Alten Consultant
+color: red
 tools:
   - Typescript
   - React
@@ -11,8 +14,7 @@ tools:
   - MongoDB
   - Kubernetes
   - Docker
-  - Azure Digital Twin
-  - Azure Services
+  - Azure 
   - Azure DevOps
 ---
 

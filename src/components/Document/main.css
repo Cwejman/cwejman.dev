@@ -20,20 +20,61 @@
   --background: hsl(0, 0%, 100%);
   --foreground: hsl(0, 0%, 5%);
   --foreground-relaxed: hsl(0, 0%, 25%);
+  --muted-half: hsl(0, 0%, 40%);
   --muted: hsl(0, 0%, 60%);
+  --card: hsl(210, 20%, 98%);
+  --card-relaxed: hsl(220, 13%, 97%);
+  --card-border: hsl(220, 13%, 91%);
+}
+
+
+.theme-red {
+  --high: hsl(0, 100%, 99.5%);
+  --low: hsl(0, 70%, 93%);
+  --strong: hsl(0, 80%, 60%);
+}
+
+.theme-yellow {
+  --high: hsl(40, 100%, 99.5%);
+  --low: hsl(40, 90%, 90%);
+  --strong: hsl(40, 80%, 60%);
+}
+
+.theme-green {
+  --high: hsl(140, 100%, 99.5%);
+  --low: hsl(140, 90%, 91%);
+  --strong: hsl(140, 70%, 50%);
+}
+
+.theme-blue {
+  --high: hsl(220, 100%, 99.5%);
+  --low: hsl(220, 90%, 93%);
+  --strong: hsl(220, 70%, 60%);
 }
 
 .theme-purple {
-  --light: hsl(280, 100%, 99%);
-  --border: hsl(280, 70%, 85%);
-  --strong: hsl(280, 70%, 60%);
-  /*--muted: hsl(280, 40%, 50%);*/
-  /*--accent: hsl(280, 70%, 25%); */
-  /*--foreground: hsl(280, 80%, 15%);*/
+  --high: hsl(260, 100%, 99.5%);
+  --low: hsl(260, 90%, 93%);
+  --strong: hsl(260, 70%, 60%);
 }
 
-* { @apply text-foreground-relaxed }
+.theme-pink {
+  --high: hsl(330, 100%, 99.5%);
+  --low: hsl(330, 70%, 93%);
+  --strong: hsl(330, 80%, 60%);
+}
+
+.theme-silver {
+  --high: hsl(0, 0%, 99.5%);
+  --low: hsl(0, 0%, 90%);
+  --strong: hsl(0, 0%, 60%);
+}
+
 h1 { @apply text-xl leading-snug text-foreground }
 h2 { @apply text-l leading-snug text-foreground }
 h3 { @apply text-m leading-snug text-foreground }
 p { @apply text-s }
+
+svg {
+  color: inherit;
+}

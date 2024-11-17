@@ -1,0 +1,35 @@
+---
+const createSvgFnWithAttributes =
+  (svg: string) =>
+  (attributes: Record<string, string | number> = {}) =>
+    Object.entries(attributes).reduce(
+      (output, [key, val]) =>
+        output.replace(new RegExp(`${key}="([^"]*)"`), `${key}="${val}"`),
+      svg,
+    );
+
+//
+
+interface Props {
+  // Imported from assets/icons, i.e. a raw svg string
+  icon: string;
+  class?: string;
+  size?: number;
+  color?: string;
+}
+
+//
+
+const component = createSvgFnWithAttributes(Astro.props.icon);
+
+const html = component({
+  ...(Astro.props.size ? { width: Astro.props.size } : {}),
+  ...(Astro.props.size ? { height: Astro.props.size } : {}),
+  ...(Astro.props.color ? { fill: Astro.props.color } : {}),
+  ...(Astro.props.color ? { stroke: Astro.props.color } : {}),
+});
+---
+
+<span class={Astro.props.class}>
+    <Fragment set:html={html} />
+</span>

@@ -16,10 +16,13 @@ interface ExperienceMarkdownGroups {
   results?: string;
 }
 
+const yearToComparable = (year: string) =>
+  year.split(' - ')[1].split(' ').reverse().join();
+
 export const getExperiences = async () => {
   const collection = await getCollection('experiences');
 
-  return await Promise.all(
+  const experiences = await Promise.all(
     collection.map(async ({ data, body, slug }) => {
       const { title, intro, efforts, results } =
         groupMarkdownByHeading<ExperienceMarkdownGroups>(body);
@@ -33,5 +36,9 @@ export const getExperiences = async () => {
         slug,
       };
     }),
+  );
+
+  return experiences.sort((a, b) =>
+    yearToComparable(a.year) > yearToComparable(b.year) ? -1 : 1,
   );
 };

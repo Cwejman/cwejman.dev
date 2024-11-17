@@ -1,33 +1,34 @@
 ---
-import './script.ts';
+import type * as models from './scenes';
 
 interface Props {
-  modelPath: string;
+  model: keyof typeof models;
 }
 ---
 
-<motif-context data-modelpath={Astro.props.modelPath}>
-    <div class="rounded-2xl border-[1px] border-strong/10 border-solid bg-gray-50 overflow-hidden aspect-video w-full" />
+<motif-context data-model={Astro.props.model}>
+    <div class="rounded-2xl border-[1px] border-low border-solid bg-high
+      overflow-hidden aspect-square sm:aspect-video w-full relative [&>*]:absolute [&>*]:top-0">
+        <div class="p-3 h-full w-full z-10">
+            <slot />
+        </div>
+    </div>
 </motif-context>
 
 <script>
   import { getCustomDataSet } from '@utils/dom';
-  import { createCanvas } from './script'
+  import { createCanvas } from './createCanvas'
+  import * as models from './scenes'
 
-  getCustomDataSet('motif-context', ({ modelpath}, element) => {
-      createCanvas({
-          container: element.querySelector('div')!,
-          loadModel: async (loader) => {
-              const model = await loader.loadAsync(modelpath!)
+  getCustomDataSet('motif-context', ({ model }, element) => {
+      const loadModel = model && models[model as keyof typeof models];
 
-              model.scene.position.set(0, 0, 0);
-              model.scene.scale.set(50, 50, 50);
-              model.scene.rotation.x = -Math.PI / 2;
-              model.scene.translateZ(-28);
-
-              return model;
-          }
-      });
+      if (loadModel) {
+          createCanvas({
+              container: element.querySelector('div')!,
+              loadModel,
+          });
+      }
   });
 
 </script>

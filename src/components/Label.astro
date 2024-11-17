@@ -1,0 +1,20 @@
+---
+import { findLabelIcon } from '../assets';
+
+interface Props {
+  label: string;
+  class?: string;
+  relaxed?: boolean;
+  iconClass?: string;
+  asIcon?: string;
+}
+
+const { iconClass, asIcon, relaxed, label } = Astro.props;
+
+const icon = findLabelIcon(asIcon ?? label);
+---
+
+<div class={`flex text-xs gap-1.5 items-center py-1.5 px-3 rounded-lg ${relaxed ? 'bg-card-relaxed' : 'bg-card border-card-border border'} ${Astro.props.class}`}>
+    {icon && <img class={`h-5 w-5 ${iconClass ?? ''}`} src={icon.src} alt={label} />}
+    <span>{label}</span>
+</div>

@@ -6,10 +6,15 @@ export default {
     extend: {
       colors: {
         background: 'var(--background)',
+        high: 'var(--high)',
+        low: 'var(--low)',
         strong: 'var(--strong)',
-        light: 'var(--light)',
+        'muted-half': 'var(--muted-half)',
         muted: 'var(--muted)',
         accent: 'var(--accent)',
+        card: 'var(--card)',
+        'card-relaxed': 'var(--card-relaxed)',
+        'card-border': 'var(--card-border)',
         foreground: 'var(--foreground)',
         'foreground-relaxed': 'var(--foreground-relaxed)',
       },
@@ -18,9 +23,11 @@ export default {
       },
       fontSize: {
         xl: '4rem',
-        l: '2.5rem',
+        l: '2.3rem',
         m: '1.55rem',
-        s: '1.1rem',
+        sm: '1.35rem',
+        s: '1.05rem',
+        xs: '0.95rem',
       },
       lineHeight: {
         snug: '1.35',
