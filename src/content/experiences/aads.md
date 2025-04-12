@@ -1,17 +1,19 @@
 ---
 company: Alten
-model: plant
+model: wheel
 year: July 2024 - Present
-color: silver
+color: pink
 tools:
   - Java
   - SpringBoot
-  - MySQL
-  - Minio
-  - Docker
   - TypeScript
   - React
   - React Query
+  - MySQL
+  - Postgres
+  - Minio
+  - Docker
+  - AWS
 ---
 
 # title
@@ -19,5 +21,12 @@ tools:
 
 # intro
 
-Lead development of the web app + web site for Hjulverkstan, a local initiative by Save the Children to foster community and integration through free bike shop centers.
+**Tech Lead** for **Save the Children** and **Ramboll** at Alten’s in-house department. Solely responsible for bringing web products to life — from understanding audience, communication, and design needs to shaping architecture, security, and full-stack development.
 
+Leading teams, mentoring developers, and guiding clients through the process, with a clear grasp of both the technical and human sides of product development.
+
+# efforts
+
+Tech Lead for Save the Children and Ramboll at Alten’s in-house department. Solely responsible for bringing web products to life — from understanding audience, communication, and design needs to shaping architecture, security, and full-stack development.
+
+Leading teams, mentoring developers, and guiding clients through the process, with a clear grasp of both the technical and human sides of product development.

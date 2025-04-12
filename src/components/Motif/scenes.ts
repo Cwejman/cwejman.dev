@@ -80,15 +80,15 @@ export const crates: LoadModelFn = async (scene, toonify) => {
 export const wheel: LoadModelFn = async (scene, toonify) => {
   const model = await loader.loadAsync('/models/wheel.glb');
 
-  model.scene.position.set(0, 0, 0);
+  model.scene.position.set(0, -3, 0);
   model.scene.scale.set(13, 13, 13);
 
   toonify(model, 0.01);
   scene.add(model.scene);
 
   return ({ scroll }) => {
-    model.scene.position.x = (0.5 - scroll) * 200;
-    model.scene.rotation.set(Math.PI / 2, scroll * 6, 0);
+    model.scene.position.x = (scroll - 0.88) * 250;
+    model.scene.rotation.set(Math.PI / 2, -scroll * 8, 0);
   };
 };
 

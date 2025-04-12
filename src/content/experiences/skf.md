@@ -18,7 +18,7 @@ tools:
 
 # intro
 
-Enhanced SKF's IoT platform’s app for integrations. Delivered features and tackled rising technical debt, instability, and bugs that hindered the backend-focused team's ability to effectively deliver on a substantial backlog of full-stack features.
+Frontend Developer at SKF’s IoT platform team. Enhanced the integration app by delivering new features while addressing deep technical debt, instability, and bugs — removing blockers that had limited the backend-focused team’s ability to ship full-stack functionality
 
 # efforts
 

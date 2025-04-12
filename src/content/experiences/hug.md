@@ -17,7 +17,9 @@ tools:
 
 
 # intro
-Hug is one of Scandinavia's leading humanitarian NGOs aiding Ukraine. Initiated as a response to the escalating invasion in February 2022, the organization has grown quickly with acquired partners such as *Volvo*, *Västra Götalandsregionen*, *Svenska Kyrkan* and *BRIS*.
+**Logistics Manager & Web Developer** at Hug, one of Scandinavia’s leading humanitarian NGOs supporting Ukraine. Contributed to the organization’s rapid growth by coordinating large-scale aid logistics with partners like **Volvo**, **Bygg-Göta**, and **Svenska Kyrkan**.
+
+Contributing on multiple fronts, also led the development of Hug’s official website, [hug.ngo](https://hug.ngo), boosting the organization’s presence and public engagement.
 
 # efforts
 
