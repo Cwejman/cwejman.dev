@@ -75,6 +75,8 @@ h2 { @apply text-l leading-snug text-foreground }
 h3 { @apply text-m leading-snug text-foreground }
 p { @apply text-s }
 
+.intro a { @apply underline decoration-strong decoration-wavy underline-offset-4 hover:opacity-80 font-medium }
+
 svg {
   color: inherit;
 }
