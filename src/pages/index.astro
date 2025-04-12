@@ -25,16 +25,16 @@ const experiences = await getExperiences();
 				</Motif>
 
 				<div>
-					<div class="pb-3">
+					<div class="pb-5 pt-1">
 						<a href={slug} class="text-l font-normal text-muted cursor-pointer group hover:opacity-70 [&>strong]:text-foreground [&>strong]:font-bold inline">
 							<Fragment set:html={title} />
 						</a>
 					</div>
 
-					<div class="space-y-4" set:html={intro} />
+					<div class="space-y-4 intro" set:html={intro} />
 
-					<div class="flex pt-6">
-						<a href={slug} class="flex group transition-all text-s font-medium hover:text-muted gap-3 items-center">
+					<div class="flex pt-7">
+						<a href={slug} class="flex group transition-all text-s font-bold hover:text-muted gap-3 items-center">
 							See efforts & results
 							<Icon size={22} class="-mx-2 group-hover:-ml-1 transition-all text-muted" icon={icons.chevronRight} />
 						</a>
