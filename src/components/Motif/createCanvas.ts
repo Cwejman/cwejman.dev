@@ -1,8 +1,9 @@
 import * as THREE from 'three';
-import { Mesh, type Scene } from 'three';
+import type { Scene } from 'three';
 
 import { getScrollProgress } from '@utils/dom.ts';
 import { createColorFromHslString, toonifyMesh } from '@utils/three.ts';
+import type { MeshExtended } from '@utils/three.ts';
 import type { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 //
@@ -38,7 +39,7 @@ export const createCanvas = async ({
 
   const updateModel = await loadModel(scene, (model, thickness, thresh) => {
     model.scene.traverse((node) => {
-      if (node instanceof THREE.Mesh && !node.isToonified) {
+      if (node instanceof THREE.Mesh && !(node as MeshExtended).isToonified) {
         toonifyMesh({
           mesh: node,
           thickness,

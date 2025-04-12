@@ -5,6 +5,12 @@ import type { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 //
 
+export interface MeshExtended extends THREE.Mesh {
+  isToonified?: boolean;
+}
+
+//
+
 export const colorToVec4 = (color: Color) =>
   new THREE.Vector4(color.r, color.g, color.b, 1.0);
 
@@ -84,13 +90,13 @@ export const toonifyMesh = ({
   const outline = new THREE.Mesh(
     mesh.geometry,
     createOutlineMaterial(colors.outline, thickness),
-  );
+  ) as MeshExtended;
 
   outline.isToonified = true;
 
   mesh.add(outline);
   mesh.material = createBinaryShadeMaterial(colors.low, colors.high, thresh);
-  mesh.isToonified = true;
+  (mesh as MeshExtended).isToonified = true;
 };
 
 //
